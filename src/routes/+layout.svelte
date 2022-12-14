@@ -14,7 +14,7 @@
   import Slider from 'stroopwafels/Slider/Slider.svelte'
   import BackToTop from 'stroopwafels/BackToTop.svelte'
   import Footer from 'stroopwafels/Footer.svelte'
-  import Aurora from '$lib/components/Aurora.svelte'
+  import Aurora from 'stroopwafels/Aurora.svelte'
 </script>
 
 <Loading />
