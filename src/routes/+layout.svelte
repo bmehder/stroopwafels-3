@@ -14,6 +14,7 @@
   import Slider from 'stroopwafels/Slider/Slider.svelte'
   import BackToTop from 'stroopwafels/BackToTop.svelte'
   import Footer from 'stroopwafels/Footer.svelte'
+  import Aurora from '$lib/components/Aurora.svelte'
 </script>
 
 <Loading />
@@ -33,6 +34,10 @@
     <div id="slider">
       <Slider {slides} isAutoplay={true} color="white" --height="70vh" />
     </div>
+  {/if}
+
+  {#if $page.route?.id === '/about'}
+    <Aurora --padding="8rem" --duration="32s">Aurora CSS Gradient</Aurora>
   {/if}
 
   <main>

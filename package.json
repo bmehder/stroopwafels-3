@@ -1,6 +1,6 @@
 {
 	"name": "stroopwafel-demo-2",
-	"version": "0.0.1",
+	"version": "1.4.60",
 	"private": true,
 	"scripts": {
 		"dev": "vite dev",
