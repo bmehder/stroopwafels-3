@@ -3,19 +3,24 @@
 
   export let post: WP_REST_API_Post
 
+  type FeaturedMedia = {
+    source_url?: string
+  }
+
   const slug = post.slug
-  const src: string = post._embedded?.['wp:featuredmedia']![0]!.source_url
+  const featuredMedia = post._embedded?.['wp:featuredmedia']?.at(0) as FeaturedMedia
+  const src = featuredMedia.source_url
   const title = post.title.rendered
   const excerpt = post.excerpt.rendered
 </script>
 
 <div class="card ">
-  <a href="/blog/{slug}" data-sveltekit-prefetch
+  <a href="/blog/{slug}" data-sveltekit-preload-data
     ><img {src} loading="lazy" alt={title} /></a
   >
   <div class="content auto-format">
     <h2>
-      <a href="/blog/{slug}" data-sveltekit-prefetch>{@html title}</a>
+      <a href="/blog/{slug}" data-sveltekit-preload-data>{@html title}</a>
     </h2>
     <div class="clamp">{@html excerpt}</div>
   </div>
