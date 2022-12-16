@@ -39,7 +39,7 @@ export const pages = [
     url: '/api',
     children: [
       { name: 'Random Number', url: '/api/random' },
-      { name: 'Dummy API', url: '/api/dummy' },
+      { name: 'Dummy API', url: '/dummy' },
     ],
   },
   {
