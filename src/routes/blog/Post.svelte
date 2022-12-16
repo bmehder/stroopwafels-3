@@ -2,6 +2,7 @@
   import type { WP_REST_API_Post } from 'wp-types'
 
   export let post: WP_REST_API_Post
+  export let index: number
 
   type FeaturedMedia = {
     source_url?: string
@@ -16,7 +17,7 @@
 
 <div class="card ">
   <a href="/blog/{slug}" data-sveltekit-preload-data
-    ><img {src} loading="lazy" alt={title} /></a
+    ><img {src} loading={index < 3 ? 'eager' : 'lazy'} alt={title} /></a
   >
   <div class="content auto-format">
     <h2>

@@ -17,8 +17,8 @@
   <h1>Blog</h1>
 
   <div class="grid auto">
-    {#each data.posts as post}
-      <Post {post} />
+    {#each data.posts as post, index}
+      <Post {post} {index} />
     {/each}
   </div>
 </section>
