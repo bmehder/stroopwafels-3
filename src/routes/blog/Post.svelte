@@ -9,7 +9,7 @@
   }
 
   const slug = post.slug
-  const featuredMedia = post._embedded?.['wp:featuredmedia']?.at(0) as FeaturedMedia
+  const featuredMedia = post._embedded?.['wp:featuredmedia']?.[0] as FeaturedMedia
   const src = featuredMedia.source_url
   const title = post.title.rendered
   const excerpt = post.excerpt.rendered
