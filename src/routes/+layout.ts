@@ -3,7 +3,7 @@ export const prerender = true
 import type { RequestEvent } from '@sveltejs/kit'
 import type { WP_REST_API_Posts } from 'wp-types'
 
-// Get Posts
+// Get Posts for prerendering
 export async function load({ fetch }: RequestEvent) {
   const BASE_URL = 'https://sprucehealthgroup.com/wp-json/wp/v2/'
 

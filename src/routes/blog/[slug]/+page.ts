@@ -1,11 +1,11 @@
 import type { RequestEvent } from '@sveltejs/kit'
-import type { WP_REST_API_Post } from 'wp-types'
+import type { WP_REST_API_Posts } from 'wp-types'
 
 export async function load({ fetch, params }: RequestEvent) {
-  const res = await fetch(
+  const response = await fetch(
     `https://sprucehealthgroup.com/wp-json/wp/v2/posts?slug=${params.slug}&_embed`
   )
-  const post: WP_REST_API_Post[] = await res.json()
+  const post: WP_REST_API_Posts = await response.json()
 
   return { post }
 }
