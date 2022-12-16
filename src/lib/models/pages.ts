@@ -38,8 +38,8 @@ export const pages = [
     name: 'APIs',
     url: '/api',
     children: [
-      { name: 'Random Number', url: '/random' },
-      { name: 'Dummy API', url: '/dummy' },
+      { name: 'Random Number', url: 'api/random' },
+      { name: 'Dummy API', url: 'api/dummy' },
     ],
   },
   {
