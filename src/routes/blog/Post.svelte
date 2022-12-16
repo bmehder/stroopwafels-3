@@ -15,7 +15,7 @@
   const excerpt = post.excerpt.rendered
 </script>
 
-<div class="card ">
+<div class="card">
   <a href="/blog/{slug}" data-sveltekit-preload-data
     ><img {src} loading={index < 3 ? 'eager' : 'lazy'} alt={title} /></a
   >

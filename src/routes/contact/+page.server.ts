@@ -1,6 +1,5 @@
 export const prerender = false
 
-// import { fail } from '@sveltejs/kit'
 import type { Actions } from './$types'
 import type { RequestEvent } from '@sveltejs/kit'
 
