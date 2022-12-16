@@ -35,13 +35,11 @@ export const pages = [
     ],
   },
   {
-    name: 'Playground',
-    url: '/playground',
+    name: 'APIs',
+    url: '/api',
     children: [
-      { name: 'Draggables', url: '/playground/drag' },
-      { name: 'Dialogue', url: '/playground/dialogue' },
-      { name: 'Random Number', url: '/api' },
-      { name: 'Dummy API', url: '/api/dummy' },
+      { name: 'Dummy REST API', url: '/api/dummy' },
+      { name: 'Dummy Results', url: '/dummy' },
     ],
   },
   {
