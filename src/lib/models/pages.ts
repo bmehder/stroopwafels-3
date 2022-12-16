@@ -40,7 +40,8 @@ export const pages = [
     children: [
       { name: 'Draggables', url: '/playground/drag' },
       { name: 'Dialogue', url: '/playground/dialogue' },
-      { name: 'Random Number API', url: '/api' },
+      { name: 'Random Number', url: '/api' },
+      { name: 'Dummy API', url: '/api/dummy' },
     ],
   },
   {
