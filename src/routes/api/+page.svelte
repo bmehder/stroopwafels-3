@@ -1,4 +1,4 @@
-<h1 class="section">Some APIs</h1>
+<h1 class="section">Endpoints</h1>
 
 <section>
   <h2><a href="/api/random">Random Number API</a></h2>
@@ -11,7 +11,11 @@
   </ul>
 
   <h3>Example:</h3>
-  <p>https://stroopwafels-demo.vercel.app/api/random?min=32&max=42</p>
+  <p>
+    <a href="/api/random?min=32&max=42"
+      >https://stroopwafels-demo.vercel.app/api/random?min=32&max=42</a
+    >
+  </p>
 </section>
 
 <section>
@@ -20,12 +24,11 @@
     An example of a REST API that handles a GET request and returns a JSON response.
   </p>
   <p>
-    Endpoint: <a href="https://stroopwafels-demo.vercel.app/api/dummy"
-      >https://stroopwafels-demo.vercel.app/api/dummy</a
-    >
+    Endpoint: <a href="/api/dummy">https://stroopwafels-demo.vercel.app/api/dummy</a>
+    (*pending configuration for Vercel)
   </p>
   <p>
-    Page using the endpoint: <a href="https://stroopwafels-demo.vercel.app/dummy"
+    Page using the endpoint: <a href="/dummy"
       >https://stroopwafels-demo.vercel.app/dummy</a
     >
   </p>
