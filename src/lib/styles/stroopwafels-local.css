@@ -44,3 +44,8 @@ header :is(svg, i) {
 .dark .isOpen>ul>li {
   border-bottom: 1px solid var(--white) !important;
 }
+
+/* Slider */
+#slider h2 {
+  font-size: 8vw;
+}
