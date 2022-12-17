@@ -1,7 +1,8 @@
 <script>
   import { page } from '$app/stores'
-  import { pages } from '$lib/models/pages'
-  import { slides } from '$lib/models/slides'
+
+  import pages from '$lib/models/pages'
+  import slides from '$lib/models/slides'
 
   import 'stroopwafels/base.css'
   import '$lib/styles/stroopwafels-local.css'
@@ -11,8 +12,8 @@
   import Loading from 'stroopwafels/Header/Loading.svelte'
   import Header from 'stroopwafels/Header/Header.svelte'
   import Slider from 'stroopwafels/Slider/Slider.svelte'
-  import BackToTop from 'stroopwafels/BackToTop.svelte'
   import Footer from 'stroopwafels/Footer.svelte'
+  import BackToTop from 'stroopwafels/BackToTop.svelte'
   import Aurora from 'stroopwafels/Aurora.svelte'
 </script>
 

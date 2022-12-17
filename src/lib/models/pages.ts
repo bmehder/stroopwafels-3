@@ -1,4 +1,4 @@
-export const pages = [
+export default [
   {
     name: 'Home',
     url: '/',

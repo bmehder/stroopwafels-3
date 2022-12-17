@@ -1,4 +1,4 @@
-export const slides = [
+export default [
   {
     src: '/slides/slider5.jpg',
     text: 'This is a slider.',

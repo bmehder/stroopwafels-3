@@ -1,4 +1,4 @@
-/* Logo */
+/* Header Logo */
 nav h1 a div small {
   color: var(--light);
 }
@@ -26,41 +26,21 @@ header {
   border-bottom: calc(var(--spacing) / 4) solid var(--black);
 }
 
-header svg,
-header i {
+/* Moved to Hamburger.svelte line 23 */
+header :is(svg, i) {
   color: var(--black) !important;
 }
+/* ###### */
 
-.dark header {
+/* Header Dark Mode */
+.dark :is(header, nav ul ul) {
   background-color: var(--black) !important;
 }
 
-.dark nav a,
-.dark nav svg,
-.dark i {
+.dark :is(nav a, nav svg, i){
   color: var(--white) !important;
-}
-
-.dark nav ul ul {
-  background-color: var(--black) !important;
 }
 
 .dark .isOpen>ul>li {
   border-bottom: 1px solid var(--white) !important;
-}
-
-/* Slider */
-#slider article::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.16);
-}
-
-#slider h2 {
-  font-size: 8vw;
-  z-index: 1;
 }
