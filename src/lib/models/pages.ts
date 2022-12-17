@@ -15,7 +15,6 @@ export const pages = [
     name: 'Blog',
     url: '/blog',
   },
-
   {
     name: 'Dox',
     url: '/docs',
