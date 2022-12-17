@@ -78,7 +78,6 @@
         },
       ]}
       duration="{3200}"
-      isAutoplay="{true}"
       color="white"
       --height="70vh"
     />
