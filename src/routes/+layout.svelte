@@ -7,7 +7,8 @@
   import '$lib/styles/stroopwafels-local.css'
   import '$lib/styles/theme.css'
 
-  import Loading from '$lib/components/Loading.svelte'
+  // import Loading from '$lib/components/Loading.svelte'
+  import Loading from 'stroopwafels/Header/Loading.svelte'
 
   import Outliner from 'stroopwafels/Outliner.svelte'
   import Header from 'stroopwafels/Header/Header.svelte'
