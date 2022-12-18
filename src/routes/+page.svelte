@@ -9,6 +9,7 @@
   import Tooltip from 'stroopwafels/Tooltip.svelte'
   import Modal from 'stroopwafels/Modal.svelte'
   import Switch from 'stroopwafels/Switch.svelte'
+  import Accordion from 'stroopwafels/Accordion/Accordion.svelte'
 
   let modal: SvelteComponentTyped
 </script>
@@ -175,8 +176,23 @@
   </div>
 </section>
 
+<section id="accordion">
+  <h2>Accordion</h2>
+  <div>
+    <Accordion --primary="var(--dark)" --secondary="var(--black)" />
+  </div>
+</section>
+
 <style>
   #tabs {
     padding-bottom: calc(var(--spacing) * 2);
+  }
+
+  #accordion div {
+    gap: 0;
+    box-shadow: var(--shadow);
+  }
+  #accordion :global(details:last-child summary) {
+    border-bottom: none;
   }
 </style>
