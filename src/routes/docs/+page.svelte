@@ -26,6 +26,7 @@
     <option value="Viewport">Viewport action</option>
     <option value="Clickoutside">Clickoutside action</option>
     <option>Switch</option>
+    <option>Accordion</option>
   </select>
 </div>
 
@@ -226,6 +227,14 @@
   <Prism
     code={`
     <Switch on:checked={handleChecked} on:unchecked={handleUnchecked} --background="var(--light)" />
+  `}
+  />
+
+  <h2 id="Accordion">Accordion</h2>
+
+  <Prism
+    code={`
+    <Accordion {items} --primary="var(--dark)" --secondary="var(--black)" />
   `}
   />
 </section>
