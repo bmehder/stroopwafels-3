@@ -27,9 +27,9 @@
     Endpoint: <a href="/api/dummy">https://stroopwafels-demo.vercel.app/api/dummy</a>
     (*pending configuration for Vercel)
   </p>
+
+  <h3>Example:</h3>
   <p>
-    Page using the endpoint: <a href="/dummy"
-      >https://stroopwafels-demo.vercel.app/dummy</a
-    >
+    <a href="/dummy">https://stroopwafels-demo.vercel.app/dummy</a>
   </p>
 </section>
