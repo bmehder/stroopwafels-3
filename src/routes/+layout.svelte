@@ -25,14 +25,20 @@
     items={pages}
     logo={`<img src="/stroopwafel.png" alt="stroopwafel" /><div>Svelte Stroopwafels<br><small> Component Library</small></div>`}
     --width="1100px"
-    --padding="2rem"
+    --padding="1.5rem"
     --background="var(--white)"
     --color="var(--black)"
   />
 
   {#if $page.route?.id === '/'}
     <div id="slider">
-      <Slider {slides} isAutoplay={true} color="white" --height="70vh" />
+      <Slider
+        {slides}
+        isAutoplay={true}
+        color="white"
+        --height="70vh"
+        --size="8vw"
+      />
     </div>
   {/if}
 

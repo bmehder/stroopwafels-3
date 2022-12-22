@@ -4,7 +4,6 @@ nav h1 a div small {
 }
 
 nav h1 {
-  margin-left: -0.5rem !important;
   font-size: 1.25rem;
 }
 
@@ -18,20 +17,6 @@ nav h1 a {
   gap: calc(var(--spacing) / 2);
 }
 
-.isOpen>ul>li {
-  border-bottom: 1px solid var(--black) !important;
-}
-
-header {
-  border-bottom: calc(var(--spacing) / 4) solid var(--black);
-}
-
-/* Moved to Hamburger.svelte line 23 */
-/* header :is(svg, i) {
-  color: var(--black) !important;
-} */
-/* ###### */
-
 /* Header Dark Mode */
 .dark :is(header, nav ul ul) {
   background-color: var(--black) !important;
@@ -43,9 +28,4 @@ header {
 
 .dark .isOpen>ul>li {
   border-bottom: 1px solid var(--white) !important;
-}
-
-/* Slider */
-#slider h2 {
-  font-size: 8vw;
 }

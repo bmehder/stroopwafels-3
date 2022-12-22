@@ -34,4 +34,25 @@
       margin-right: var(--spacing);
     }
   }
+
+  :global(main:has(.sidebar)) {
+    padding-block-end: 0;
+  }
+
+  :global(.sidebar) {
+    gap: calc(var(--spacing) * 2);
+    align-items: start;
+  }
+
+  @media (min-width: 769px) {
+    :global(main:has(.sidebar)) {
+      padding-block-end: calc(var(--spacing) * 2);
+    }
+
+    :global(.sidebar) {
+      grid-template-columns: 2fr 1fr;
+      max-width: 1100px;
+      margin-inline: auto;
+    }
+  }
 </style>
