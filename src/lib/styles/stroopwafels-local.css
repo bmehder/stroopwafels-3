@@ -27,9 +27,9 @@ header {
 }
 
 /* Moved to Hamburger.svelte line 23 */
-header :is(svg, i) {
+/* header :is(svg, i) {
   color: var(--black) !important;
-}
+} */
 /* ###### */
 
 /* Header Dark Mode */
